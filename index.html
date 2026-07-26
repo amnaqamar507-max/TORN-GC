@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    >
+
+    <title>Torn Souls 🌸</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- NAME SCREEN -->
+
+    <div id="nameBox" class="name-screen">
+
+        <div class="name-card">
+
+            <div class="logo-flower">
+                🌸
+            </div>
+
+            <h1>
+                Torn Souls
+            </h1>
+
+            <p>
+                Find your people. Share your thoughts.
+            </p>
+
+            <input
+                id="nameInput"
+                type="text"
+                maxlength="20"
+                placeholder="Choose a nickname"
+                autocomplete="off"
+            >
+
+            <button id="saveName">
+                Join Chat ✨
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- CHAT APP -->
+
+    <div class="chat-container">
+
+
+        <!-- HEADER -->
+
+        <header class="top-bar">
+
+            <div class="title-area">
+
+                <h2>
+                    🌸 Torn Souls
+                </h2>
+
+                <p id="onlineCount">
+                    0 Online members
+                </p>
+
+            </div>
+
+
+            <div class="header-actions">
+
+                <button
+                    id="profileBtn"
+                    class="profile-btn"
+                    type="button"
+                    aria-label="View members"
+                >
+                    👥
+                </button>
+
+                <div class="status">
+                    🟢
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+
+        <!-- MESSAGES -->
+
+        <main id="messages" class="messages">
+
+            <div id="emptyChat" class="empty-chat">
+
+                <div>
+                    🌸
+                </div>
+
+                <h3>
+                    Welcome to Torn Souls
+                </h3>
+
+                <p>
+                    Start a conversation and let your thoughts bloom.
+                </p>
+
+            </div>
+
+        </main>
+
+
+        <div id="typing" class="typing">
+        </div>
+
+
+        <!-- INPUT -->
+
+        <footer class="input-area">
+
+
+            <!-- REPLY PREVIEW -->
+
+            <div
+                id="replyPreview"
+                class="reply-preview"
+            >
+
+                <div class="reply-preview-left">
+
+                    <strong id="replyPreviewName">
+                    </strong>
+
+                    <span id="replyPreviewText">
+                    </span>
+
+                </div>
+
+
+                <button
+                    id="cancelReply"
+                    type="button"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- INPUT ROW -->
+
+            <div class="input-row">
+
+
+                <button
+                    id="emojiBtn"
+                    type="button"
+                >
+                    😊
+                </button>
+
+
+                <input
+                    id="messageInput"
+                    type="text"
+                    placeholder="Write something..."
+                    maxlength="500"
+                    autocomplete="off"
+                >
+
+
+                <button
+                    id="bottleBtn"
+                    type="button"
+                >
+                    🫧
+                </button>
+
+
+                <button
+                    id="sendBtn"
+                    type="button"
+                >
+                    Send
+                </button>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <!-- MEMBERS PANEL -->
+
+    <div
+        id="profilePanel"
+        class="profile-panel"
+    >
+
+        <div class="profile-box">
+
+
+            <button
+                id="closeProfile"
+                class="close-profile"
+                type="button"
+            >
+                ×
+            </button>
+
+
+            <div class="members-icon">
+                👥
+            </div>
+
+
+            <h2>
+                🌸 Members
+            </h2>
+
+
+            <p class="member-subtitle">
+                Souls currently online
+            </p>
+
+
+            <div id="memberList">
+                Loading...
+            </div>
+
+
+            <hr>
+
+
+            <h3>
+                Change nickname
+            </h3>
+
+
+            <input
+                id="changeNameInput"
+                type="text"
+                maxlength="20"
+                placeholder="New nickname"
+            >
+
+
+            <button
+                id="changeNameBtn"
+                type="button"
+            >
+                Change Name ✨
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script
+        type="module"
+        src="script.js"
+    ></script>
+
+
+</body>
+
+</html>
